@@ -95,19 +95,19 @@ const frameIn = [{
       }
   },
   {
-      path: '/:id(\\d)::cmd(invite)/',
-      name: 'inviteuser',
-      component: _import("page/static/Admin/Invite"),
-      meta: {
-          ...meta,
-          requiresAuth: true,
-          admin: true,
-      }
-  },
-  {
       path: '/:id(\\d)::cmd(register)/',
       name: 'register',
       component: _import("page/static/Admin/Register"),
+      meta: {
+          ...meta,
+          requiresAuth: true,
+          admin: true
+      }
+  },
+  {
+      path: '/:id(\\d)::cmd(invite)/',
+      name: 'invite',
+      component: _import("page/static/Admin/Invite"),
       meta: {
           ...meta,
           requiresAuth: true,
@@ -191,22 +191,22 @@ const frameIn = [{
       }
   },
   {
+      path: '/:id(\\d)::cmd(admin)/spam',
+      name: 'managespam',
+      component: _import("page/static/Admin/ManageSpamUsers"),
+      meta: {
+          ...meta,
+          requiresAuth: true,
+          admin: true,
+      }
+  },
+  {
       path: '/:id(\\d)::cmd(settings)/',
       name: 'settings',
       component: _import("page/static/Users/Settings"),
       meta: {
           ...meta,
           requiresAuth: true,
-      }
-  },
-  {
-      path: '/:id(\\d)::cmd(delete)/',
-      name: 'deleteuser',
-      component: _import("page/static/Admin/Delete"),
-      meta: {
-          ...meta,
-          requiresAuth: true,
-          admin: true
       }
   },
   {

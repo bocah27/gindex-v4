@@ -72,7 +72,7 @@
               </div>
               <div class="field">
                 <p class="control has-icons-left has-icons-right">
-                  <input class="input is-rounded" placeholder="Enter Your OTP" id="otp" type="text" v-model="otp" required>
+                  <input class="input is-rounded" placeholder="Enter Your OTP" id="otp" type="text" v-model="otp" autofocus>
                   <span class="icon is-small is-left">
                     <i class="fas fa-key"></i>
                   </span>

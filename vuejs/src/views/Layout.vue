@@ -4,7 +4,7 @@
       <Head v-if="showInfo"></Head>
         <!-- <keep-alive> -->
         <feb-alive>
-          <router-view></router-view>
+            <router-view ></router-view>
         </feb-alive>
         <!-- </keep-alive> -->
         <Footer v-if="showInfo"></Footer>
